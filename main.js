@@ -2,12 +2,9 @@
 // Date: 5/2/21
 // Description: Convert an array of integers into an array of strings representing the phonetic equivalent of the integer.
 
-
-
-
+const input = process.argv.slice(2);
 
 const numbers = ['Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine'];
-
 
 function phoneticNum(intList){
 for (let i = 0; i < intList.length; i++) {
@@ -22,12 +19,8 @@ for (let i = 0; i < intList.length; i++) {
 }
 }
 
-//testing output
-phoneticNum( ['3', '25', '209']);
+phoneticNum(input)
 
-phoneticNum(['10', '300', '5']);
 
-phoneticNum([])
 
-phoneticNum(['1234567890','987654321'])
 
